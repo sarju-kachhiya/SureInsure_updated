@@ -81,9 +81,14 @@
 .submit-btn{
   padding: 0.8rem 1.3rem;
 }
+.submit-btn:hover{
+  color: #000;
+  padding: 0.8rem 1.3rem;
+}
 
 .custom-quote-btn:hover {
   background-color: #157347;
+  color: #000;
 }
 
 .custom-quote-btn1{
@@ -510,6 +515,10 @@ ul li img {
     .btn-cta:hover{ background:#e6fffb; color:#083a36; }
 
 
+  ::placeholder {
+    color: #c8c8c8;
+  }
+
     </style>
 </head>
 <body>
@@ -562,7 +571,7 @@ ul li img {
   <p class="my-3">We provide a wide variety of customized insurance plans to suit your specific needs.</p>
 
   <!-- Short Form -->
-  <form class="bg-light text-dark p-4 rounded shadow">
+  <form class="bg-light text-dark p-4 rounded shadow" action="thankyou.html">
     <h4 class="mb-4 fw-bold text-center col1">Get Your Free Quote</h4>
     <div class="row">
       <div class="col-md-6 mb-3">
@@ -579,7 +588,7 @@ ul li img {
         <textarea class="form-control custom-rounded" id="message" rows="3" placeholder="Your message"></textarea>
     </div>
     <button type="submit" class="btn btn-success submit-btn w-100 custom-rounded">Submit</button>
-    <p class="mt-3 text-center">*By submitting this form, you agree to our <a class="link1" href="terms.html">Terms & Conditions</a> and <a class="link1" href="privacy.html">Privacy Policy.</a></p>
+    <p class="mt-3 text-center" style="font-size: small;">*By submitting this form, you agree to our <a class="link1" href="terms.html">Terms & Conditions</a> and <a class="link1" href="privacy.html">Privacy Policy</a>. and consent to receive information from AHS by email, phone, or text (including prerecorded, autodialed, or AI-generated messages) at the contact details provided.</p>
   </form>
 </div>
 
