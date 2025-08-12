@@ -78,12 +78,13 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar1 navbar-expand-lg bg-white shadow-sm">
+  <nav class="navbar navbar1 navbar-expand-lg bg-white shadow-sm d-flex align-items-center justify-content-center">
     <a class="navbar-brand fw-bold fs-1 text-success" href="./"><span class="col1">Sure</span>Insure</a>
   </nav>
 
   <!-- Main Section -->
   <main class="d-flex flex-column align-items-center justify-content-center flex-grow-1 p-3">
+    
     <div class="unsubscribe-card">
             <img src="assets/Unsubscribe.png" width="190px" class="mb-3" alt="">
       <h1 class="display-6 col1 fw-bold mb-2">Unsubscribe</h1>
@@ -93,13 +94,15 @@
       </p>
       <form onsubmit="event.preventDefault(); this.querySelector('.result').classList.remove('d-none'); this.reset();">
         <div class="mb-3 text-start">
+<div class="result alert alert-success mt-3 d-none">
+          Preferences updated. You can resubscribe anytime.
+        </div>
+
           <label class="form-label lbl1">Email address</label>
           <input type="email" class="form-control form-control-lg custom-rounded" placeholder="you@domain.com" required>
         </div>
         <button type="submit" class="btn custom-quote-btn btn-lg w-100">Unsubscribe</button>
-        <div class="result alert alert-success mt-3 d-none">
-          Preferences updated. You can resubscribe anytime.
-        </div>
+        
       </form>
     </div>
   </main>
